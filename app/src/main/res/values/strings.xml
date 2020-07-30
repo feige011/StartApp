@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FSystem</string>
+    <string name="title_activity_user">MainActivity</string>
+    <string name="title_home">星辰大厅</string>
+    <string name="title_dashboard">留言</string>
+    <string name="title_notifications">我的项目</string>
+    <string name="title_mystudy">我</string>
+</resources>

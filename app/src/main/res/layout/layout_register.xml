@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/registerbackground"
+    android:orientation="vertical"
+    android:paddingLeft="50dp"
+    android:paddingTop="20dp"
+    android:paddingRight="50dp"
+    tools:ignore="UselessParent,Autofill,LabelFor,TextFields,RtlHardcoded,HardcodedText">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Register_ci_logo"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/register_et_account"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_shape"
+        android:drawableLeft="@drawable/account"
+        android:drawablePadding="5dp"
+        android:hint="请输入账号"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/register_et_verificationCode"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:background="@drawable/edittext_shape"
+            android:drawableLeft="@drawable/secretguard"
+            android:drawablePadding="5dp"
+            android:hint="请输入邮箱"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/register_et_password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_shape"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="5dp"
+        android:hint="请输入密码(6-16个字符)"
+        android:inputType="text"
+        android:maxLength="16"
+        android:singleLine="true"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/register_et_comfrimPassword"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_shape"
+        android:drawableLeft="@drawable/repeatpassword"
+        android:drawablePadding="5dp"
+        android:hint="请确认密码"
+        android:inputType="text"
+        android:maxLength="16"
+        android:singleLine="true"
+        android:textSize="15sp" />
+
+
+    <EditText
+        android:id="@+id/forget_et_phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_shape"
+        android:drawableLeft="@drawable/name"
+        android:drawablePadding="5dp"
+        android:hint="昵称"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/register_bt_register"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:background="#00FFFF"
+        android:text="立即注册"
+        android:textSize="15sp"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>
+
